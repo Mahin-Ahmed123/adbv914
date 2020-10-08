@@ -1,5 +1,5 @@
-//import processing.sound.*;
-//SoundFile spaceTheme; //sound is placed in its own object
+import processing.sound.*;
+SoundFile spaceTheme; //sound is placed in its own object
 int stars = 550;
 float[] x = new float[stars];
 float[] y = new float[stars];
@@ -8,8 +8,8 @@ PShape saturn;
 void setup()
 {
   size(600, 600, P3D);
-  //spaceTheme = new SoundFile(this,"Space.mp3");
-  //spaceTheme.play();
+  spaceTheme = new SoundFile(this,"Space.mp3");
+  spaceTheme.play();
   background(0);
   noFill();
   stroke(255);
